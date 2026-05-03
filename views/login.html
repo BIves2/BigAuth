@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigAuth-Login</title>
+    <link rel="stylesheet" href="../public/styles/loginStyle.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Login</legend>
+        <div>
+            <form>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Ex: Za Banta"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Ex: za123"><br>
+                <p id="message"></p>
+                <div id="buttonsDiv">
+                    <input type="button" value="Login" id="loginButton" onclick="login()">
+                    <input type="reset" value="Reset" id="resetButton">
+                </div>
+                <p>You don't have account ? <a href="signup.html">Sign up</a></p>
+            </form>
+        </div>
+    </fieldset>
+    <script src="../public/scripts/loginScript.js"></script>
+</body>
+</html>

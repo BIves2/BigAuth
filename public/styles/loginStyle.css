@@ -1,0 +1,67 @@
+body{
+    font-family: 'Arial black';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+fieldset{
+    width: 400px;
+    box-shadow: 2px 2px gray;
+    transition: 0.7s;
+}
+fieldset:hover{
+    scale: 1.01;
+    box-shadow: 4px 4px gray;
+}
+#password, #email{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1.4px solid gray;
+    margin-bottom: 20px;
+    transition: 0.7s;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+#password:hover,#email:hover{
+    border-radius: 20px;
+}
+legend{
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 70px;
+}
+fieldset{
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#buttonsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#buttonsDiv > input{
+    height: 40px;
+    width: 140px;
+    border-radius: 17px;
+    border: 1px solid gray;
+    background: none;
+    transition: 0.7s;
+}
+#buttonsDiv > input:hover{
+    background: rgb(253, 166, 166);
+    box-shadow: 2px 2px 1px 0px red; 
+    height: 49px;
+    width: 149px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+#message{
+    color : red;
+    text-align: center;
+}
