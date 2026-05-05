@@ -3,6 +3,9 @@ const cors = require('cors');
 const app = require('./routes/authRoutes').express()
 const authRoutes = require('./routes/authRoutes').router;
 
+/**
+ * Initialisation of the server
+ */
 app.use(cors());
 app.use(express.json())
 app.use('/', authRoutes);

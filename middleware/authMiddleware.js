@@ -1,6 +1,13 @@
 const jwt = require('jsonwebtoken')
 const SECRET = 'sk_123i4veppps'
 
+/**
+ * Middleware used to verify the tokens
+ * @param {*} req : Request send by the user
+ * @param {*} res : Response send by the server
+ * @param {*} next 
+ * @returns 
+ */
 function verifyToken(req, res, next){
     const header = req.headers['autorization'];
     if(!header){

@@ -21,3 +21,12 @@ npm install
 node index.js
 ```
 After that, you have to open index.html file (on views folder)
+
+## What about the view ?
+
+The view of BigAuth is shared between 4 sides :
+*Home side*: It represents the first side sew by the user when he get into BigAuth app
+![FirstSide]()
+*Login side*: If an user have an account, he can log into the app
+![LoginSide]()
+*Sign Up side*: If an user doesn't have account yet, it enable him to create an account 

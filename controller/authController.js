@@ -16,6 +16,9 @@ exports.signup = (req, res) => {
     if(!name || !email || !password){
         return res.status(400).json({"message"  : "All fields are required !"});
     }
+    if(!email.includes('@')){
+        return res.status(400).json({"message": "Wrong Email"});
+    }
     bcrypt.hash(password, 10, (err, hashedPassword) => {
         User.createUserWithPassword(name, email, hashedPassword, (err) => {
             if(err){
